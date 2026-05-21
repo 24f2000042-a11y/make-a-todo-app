@@ -1,0 +1,1 @@
+const express = require('express'); const { getItems, createItem, deleteItem, toggleItem } = require('../controllers/itemController'); const router = express.Router(); router.get('/', getItems); router.post('/', createItem); router.delete('/:id', deleteItem); router.patch('/:id', toggleItem); module.exports = router;
